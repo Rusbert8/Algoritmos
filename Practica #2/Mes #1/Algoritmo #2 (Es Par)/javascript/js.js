@@ -1,5 +1,5 @@
 /* VALORES: */
-var k = parseInt (19);
+var k = parseInt (2);
 
 /* VERIFICANDO: */
 if (k <= 0) {
@@ -15,12 +15,12 @@ if (k <= 0) {
 function isEven (k){
     /* Hice la función tomando en cuenta que una división es una resta repetida 
     y por ello uso un ciclo */
-    while (k > 0){
+    while (k > 1){
         k -= 2;
-        if (k == 0){
-            return console.log ("True");
-        } else if (k == 1 || k < 0){
-            return console.log ("False")
-        } 
     }
+    if (k == 0){
+        return console.log ("True");
+    } else if (k == 1){
+        return console.log ("False");
+    } 
 }
