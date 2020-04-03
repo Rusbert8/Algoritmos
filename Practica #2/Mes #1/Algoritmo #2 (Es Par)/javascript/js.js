@@ -1,5 +1,5 @@
 /* VALORES: */
-var k = parseInt (1);
+var k = parseInt (19);
 
 /* VERIFICANDO: */
 if (k <= 0) {
