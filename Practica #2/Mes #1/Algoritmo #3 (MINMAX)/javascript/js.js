@@ -1,11 +1,11 @@
-/* Arreglo: */
+/* ARREGLO: */
 var data = []; /* 8,1,3,7,28,45,0,6,-1 */
 
 MINMAX();
 
-/* Funciones: */
+/* FUNCIÓN: */
 function MINMAX (){
-/* MAX: */
+/* Max: */
     let max = data [0];
 
     for (let x of data){
@@ -14,7 +14,7 @@ function MINMAX (){
         }
     }
 
-/* MIN: */
+/* Min: */
     let min = data [0];
 
     for (let y of data){

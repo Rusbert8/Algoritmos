@@ -4,23 +4,23 @@ var n = parseInt ();
 var m = parseInt ();
 
 /* VERIFICANDO: */
-if (n <= 0 || m <= 0) {
-    console.log ("Introduce valores positivos.");
-} else if (n >= 1 && m >= 1) {
+if (n > 0 && m > 0) {
     isMultiple (n, m);
 } else {
-    console.log ("Valor inválido.");
+    console.log ("Introduce valores positivos.");
 }
 
 /* FUNCIONES: */
 
 function isMultiple (n, m) {
     let suma = m;
+    let x = 1;
     while (n > suma) {
         suma += m;
+        ++x;
     }   
     if (suma == n){
-        return console.log ("True");  
+        return console.log ("True (" + m + " x " + x + " = " + n + ")");  
     } else {  
         return console.log ("False");   
     }

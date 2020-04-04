@@ -1,26 +1,29 @@
 /* VALORES: */
-var k = parseInt (2);
+var k = parseInt ();
 
 /* VERIFICANDO: */
-if (k <= 0) {
-    console.log ("Introduce valores positivos.");
-} else if (k > 0) {
+if (k == 0) {
+    console.log ("Introduce un valor entero.");
+} else {  
     isEven (k);
-} else {
-    console.log ("Valor inválido.");
 }
 
-/* Funciones: */
+/* FUNCIÓN: */
+function isEven (k){/* Hice la función tomando en cuenta que una división es una resta repetida 
+y por ello uso un ciclo */
 
-function isEven (k){
-    /* Hice la función tomando en cuenta que una división es una resta repetida 
-    y por ello uso un ciclo */
+/* Para numeros positivos: */
     while (k > 1){
         k -= 2;
     }
+/* Para numeros negativos: */
+    while (k < -1){
+        k += 2;
+    }
+/* ¿Par o Impar? */
     if (k == 0){
         return console.log ("True");
-    } else if (k == 1){
+    } else if (k == 1 || k == -1){
         return console.log ("False");
     } 
 }
