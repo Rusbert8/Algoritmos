@@ -1,7 +1,7 @@
 /* VALORES: */
-var n = parseInt (6);
+var n = parseInt ();
 
-var m = parseInt (3);
+var m = parseInt ();
 
 /* VERIFICANDO: */
 if (n <= 0 || m <= 0) {
@@ -15,17 +15,19 @@ if (n <= 0 || m <= 0) {
 /* FUNCIONES: */
 
 function isMultiple (n, m) {
-    let x = 1;
-    while (n != m * x || n == m * x) {
-        if (n == m * x ) {
-            return console.log ("True");
-        } else if (n > m * x){
-            x++;
-        } else {
-            return console.log ("False");
-        }      
-    } 
+    let suma = m;
+    while (n > suma) {
+        suma += m;
+    }   
+    if (suma == n){
+        return console.log ("True");  
+    } else {  
+        return console.log ("False");   
+    }
 } 
+
+
+
 
 
 
