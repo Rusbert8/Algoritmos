@@ -1,7 +1,7 @@
 /* VALORES: */
-var n = parseInt ();
+var n = parseInt (6);
 
-var m = parseInt ();
+var m = parseInt (3);
 
 /* VERIFICANDO: */
 if (n > 0 && m > 0) {
