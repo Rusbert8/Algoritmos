@@ -22,6 +22,8 @@ function TwoSum (){
              if (b == menores.length - 1){
                 a++;
                 b = a + 1;
+            } else if (a >= menores.length - 1) {
+                return console.log ("No hay sumas posibles iguales al target.");
             } else {
                 b++;
             }
