@@ -1,6 +1,6 @@
 /* INPUT: */
 
-hexToDec("1101010");
+hexToDec("");
 
 /* FUNCIÓN */
 
